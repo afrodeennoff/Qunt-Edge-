@@ -1,12 +1,11 @@
 import { ThemeProvider } from "@/context/theme-provider";
 import { DataProvider } from "@/context/data-provider";
 import Modals from "@/components/modals";
+import Navbar from "./components/navbar";
 import { SyncContextProvider } from "@/context/sync-context";
 import { RithmicSyncNotifications } from "./components/import/rithmic/sync/rithmic-notifications";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Sidebar from "./components/sidebar";
-import DashboardHeader from "./components/dashboard-header";
 
 export default async function RootLayout({
   children,
@@ -20,15 +19,8 @@ export default async function RootLayout({
           <SyncContextProvider>
             <RithmicSyncNotifications />
             <Toaster />
-            <div className="flex h-screen bg-background overflow-hidden relative">
-              <Sidebar />
-              <main className="flex-1 flex flex-col h-full w-full overflow-hidden relative">
-                <DashboardHeader />
-                <div className="flex-1 overflow-y-auto">
-                  {children}
-                </div>
-              </main>
-            </div>
+            <Navbar />
+            {children}
             <Modals />
           </SyncContextProvider>
         </DataProvider>
