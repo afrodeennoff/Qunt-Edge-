@@ -6,12 +6,8 @@ import { PostType, PostStatus, VoteType } from '@/prisma/generated/prisma/client
 
 import { revalidatePath } from 'next/cache'
 import sharp from 'sharp'
-import { Resend } from 'resend'
 import { formatDistanceToNow } from 'date-fns'
 import { fr, enUS } from 'date-fns/locale'
-import CommentNotificationEmail from '@/components/emails/blog/comment-notification'
-
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 // Helper function to check if user is admin
 async function isAdmin(userId: string) {
@@ -397,7 +393,17 @@ async function sendCommentNotificationEmail({
   console.log('Sending comment notification email to:', recipientEmail)
 
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY)
+    const resendApiKey = process.env.RESEND_API_KEY
+
+    if (!resendApiKey) {
+      console.warn('RESEND_API_KEY is not configured, skipping email notification')
+      return
+    }
+
+    const { Resend } = await import('resend')
+    const CommentNotificationEmail = (await import('@/components/emails/blog/comment-notification')).default
+
+    const resend = new Resend(resendApiKey)
     await resend.emails.send({
       from: 'QuntEdge Community <community@eu.updates.quntedge.app>',
       to: recipientEmail,
