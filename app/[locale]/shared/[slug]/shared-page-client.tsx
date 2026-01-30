@@ -122,7 +122,7 @@ function TopBanner({ t }: { t: any }) {
           <div className="flex items-center gap-x-4">
             <Logo className="fill-black h-6 w-6 dark:fill-white" />
             <div className="flex flex-col">
-              <h1 className="font-semibold">Deltalytix</h1>
+              <h1 className="font-semibold">QuntEdge</h1>
               <p className="text-sm text-muted-foreground">{t('shared.tagline')}</p>
             </div>
           </div>

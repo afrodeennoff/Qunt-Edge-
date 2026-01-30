@@ -236,7 +236,7 @@ export default async function OpenSource() {
                 <AccordionContent className="text-xs md:text-sm text-muted-foreground">
                   <p>
                     {t("landing.accordion.openSource.description", {
-                      repoName: "deltalytix",
+                      repoName: "quntedge",
                     })}
                   </p>
                   <Button

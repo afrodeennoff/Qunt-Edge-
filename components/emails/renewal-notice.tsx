@@ -44,7 +44,7 @@ const translations = {
     supportButton: 'Contact Support',
     autoRenewalNote: 'This account is set to auto-renew. If you want to make changes or cancel, please do so before the renewal date.',
     bestRegards: 'Best regards',
-    team: 'The Deltalytix Team',
+    team: 'The QuntEdge Team',
     unsubscribe: 'Unsubscribe from renewal notifications',
     frequencies: {
       monthly: 'Monthly',
@@ -72,7 +72,7 @@ const translations = {
     supportButton: 'Contacter le Support',
     autoRenewalNote: 'Ce compte est configuré pour se renouveler automatiquement. Si vous souhaitez apporter des modifications ou annuler, veuillez le faire avant la date de renouvellement.',
     bestRegards: 'Cordialement',
-    team: 'L\'équipe Deltalytix',
+    team: 'L\'équipe QuntEdge',
     unsubscribe: 'Se désabonner des notifications de renouvellement',
     frequencies: {
       monthly: 'Mensuel',

@@ -1,6 +1,6 @@
 {
-  "name": "Deltalytix",
-  "short_name": "Deltalytix",
+  "name": "QuntEdge",
+  "short_name": "QuntEdge",
   "description": "Next generation trading dashboard",
   "start_url": "/",
   "display": "standalone",

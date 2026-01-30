@@ -7,7 +7,7 @@ const octokit = new Octokit({
 })
 
 const REPO_OWNER = 'hugodemenez'
-const REPO_NAME = 'deltalytix'
+const REPO_NAME = 'quntedge'
 
 export async function getGithubStats() {
   try {

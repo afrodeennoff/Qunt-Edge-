@@ -3,7 +3,7 @@ import { getPost, getAllPosts } from "@/lib/mdx"
 import type { ReactElement } from "react"
 import { getStaticParams as getLocaleStaticParams } from '@/locales/server'
 
-export const alt = "Deltalytix Update"
+export const alt = "QuntEdge Update"
 export const size = {
     width: 1200,
     height: 630,
@@ -87,7 +87,7 @@ export default async function Image({
                             letterSpacing: "-0.01em",
                         }}
                     >
-                        Deltalytix
+                        QuntEdge
                     </span>
                 </div>
 

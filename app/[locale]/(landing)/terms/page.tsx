@@ -13,7 +13,7 @@ export default function TermsOfService() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-3">{t('terms.sections.companyInfo.title')}</h2>
         <p>{t('terms.sections.companyInfo.content')}</p>
-        <p>{t('terms.sections.companyInfo.contact')}<a href="mailto:contact@deltalytix.app">contact@deltalytix.app</a></p>
+        <p>{t('terms.sections.companyInfo.contact')}<a href="mailto:contact@quntedge.app">contact@quntedge.app</a></p>
       </section>
 
       <section className="mb-6">

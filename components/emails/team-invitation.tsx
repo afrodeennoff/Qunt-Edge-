@@ -24,26 +24,26 @@ interface TeamInvitationEmailProps {
 
 const content = {
   en: {
-    preview: "You've been invited to join a team on Deltalytix",
+    preview: "You've been invited to join a team on QuntEdge",
     greeting: "Hello",
-    invitation: "You've been invited to join a team on Deltalytix",
+    invitation: "You've been invited to join a team on QuntEdge",
     teamName: "Team Name",
     inviter: "Invited by",
     joinDescription: "Join this team to collaborate with your team and access shared analytics.",
     joinButton: "Join Team →",
-    footer: "This email was sent by Deltalytix",
+    footer: "This email was sent by QuntEdge",
     unsubscribe: "Unsubscribe",
     days: ["Mon", "Tue", "Wed", "Thu", "Fri"]
   },
   fr: {
-    preview: "Vous avez été invité à rejoindre une équipe sur Deltalytix",
+    preview: "Vous avez été invité à rejoindre une équipe sur QuntEdge",
     greeting: "Bonjour",
-    invitation: "Vous avez été invité à rejoindre une équipe sur Deltalytix",
+    invitation: "Vous avez été invité à rejoindre une équipe sur QuntEdge",
     teamName: "Nom de l'équipe",
     inviter: "Invité par",
     joinDescription: "Rejoignez cette équipe pour collaborer avec votre équipe et accéder aux analyses partagées.",
     joinButton: "Rejoindre l'équipe →",
-    footer: "Cet email vous a été envoyé par Deltalytix",
+    footer: "Cet email vous a été envoyé par QuntEdge",
     unsubscribe: "Se désabonner",
     days: ["Lun", "Mar", "Mer", "Jeu", "Ven"]
   }
@@ -54,13 +54,13 @@ export default function TeamInvitationEmail({
   teamName = "My Team",
   inviterName = "trader",
   inviterEmail = "trader@example.com",
-  joinUrl = "https://deltalytix.app/teams/join",
+  joinUrl = "https://quntedge.app/teams/join",
   language = "fr",
 }: TeamInvitationEmailProps) {
   const lang = language === "en" ? "en" : "fr";
   const t = content[lang];
   const unsubscribeUrl = email
-    ? `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
+    ? `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
     : '#';
 
   return (
@@ -110,7 +110,7 @@ export default function TeamInvitationEmail({
               <Text className="text-gray-800 mt-8 mb-4">
                 Hugo DEMENEZ
                 <br />
-                <span className="text-gray-600">Founder of Deltalytix</span>
+                <span className="text-gray-600">Founder of QuntEdge</span>
               </Text>
 
               <Hr className="border-gray-200 my-8" />
@@ -123,7 +123,7 @@ export default function TeamInvitationEmail({
                   {t.unsubscribe}
                 </Link>
                 {' • '}
-                © {new Date().getFullYear()} Deltalytix
+                © {new Date().getFullYear()} QuntEdge
               </Text>
             </Section>
           </Section>

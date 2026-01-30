@@ -12,7 +12,7 @@ export default function AboutPage() {
 
   return (
     <div className="px-4 py-12 bg-background text-foreground">
-      <h1 className="text-4xl font-bold text-center mb-8">About Deltalytix</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">About QuntEdge</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="bg-card">
@@ -21,7 +21,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              At Deltalytix, we&apos;re on a mission to empower traders with advanced analytics and AI-driven insights. 
+              At QuntEdge, we&apos;re on a mission to empower traders with advanced analytics and AI-driven insights. 
               Our platform is designed to help you understand your trading patterns, optimize your strategies, 
               and ultimately become a better trader through comprehensive backtesting and analysis of your real track record.
             </p>
@@ -40,7 +40,7 @@ export default function AboutPage() {
               a tool that could truly help traders understand and improve their performance.
             </p>
             <p className="text-muted-foreground">
-              This unique blend of skills and experience led to the creation of Deltalytix - a platform that 
+              This unique blend of skills and experience led to the creation of QuntEdge - a platform that 
               reflects the needs of serious traders looking to gain deeper insights into their trading patterns 
               and performance.
             </p>
@@ -65,7 +65,7 @@ export default function AboutPage() {
 
         <Card className="bg-card md:col-span-2">
           <CardHeader>
-            <CardTitle className="text-2xl">Why Deltalytix?</CardTitle>
+            <CardTitle className="text-2xl">Why QuntEdge?</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">

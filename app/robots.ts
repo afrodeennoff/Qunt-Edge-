@@ -11,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         '/authentication/',
       ],
     },
-    sitemap: 'https://deltalytix.app/sitemap.xml',
+    sitemap: 'https://quntedge.app/sitemap.xml',
   }
 } 

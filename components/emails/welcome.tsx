@@ -25,14 +25,14 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
   const baseUrl = process.env.NEXT_PUBLIC_APP_URL || '';
   const thumbnailUrl = `${baseUrl}/api/email/thumbnail/${youtubeId}/maxresdefault`;
   const unsubscribeUrl = email 
-    ? `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
+    ? `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
     : '#';
 
   if (language === 'fr') {
   return (
     <Html>
       <Head />
-      <Preview>Bienvenue sur Deltalytix - Votre plateforme de suivi de trading</Preview>
+      <Preview>Bienvenue sur QuntEdge - Votre plateforme de suivi de trading</Preview>
       <Tailwind>
         <Body className="bg-gray-50 font-sans">
           <Section className="bg-white max-w-[600px] mx-auto rounded-lg shadow-xs">
@@ -42,7 +42,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               </Heading>
               
               <Text className="text-gray-800 mb-4 leading-6">
-                Ravi de vous compter parmi les utilisateurs de Deltalytix !
+                Ravi de vous compter parmi les utilisateurs de QuntEdge !
               </Text>
 
               <Text className="text-gray-800 mb-4 leading-6">
@@ -57,7 +57,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
                 <Link href={`https://youtu.be/${youtubeId}`}>
                   <Img
                     src={thumbnailUrl}
-                    alt="Dernière vidéo Deltalytix"
+                    alt="Dernière vidéo QuntEdge"
                     className="rounded-lg w-full mb-4 shadow-xs"
                   />
                 </Link>
@@ -80,7 +80,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               <Section className="text-center">
                 <Button 
                   className="bg-black text-white text-sm px-6 py-2.5 rounded-md font-medium box-border"
-                  href="https://deltalytix.app/dashboard"
+                  href="https://quntedge.app/dashboard"
                 >
                   Accéder à mon tableau de bord →
                 </Button>
@@ -89,7 +89,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               <Hr className="border-gray-200 my-8" />
 
               <Text className="text-gray-400 text-xs text-center">
-                Cet email vous a été envoyé par Deltalytix
+                Cet email vous a été envoyé par QuntEdge
                 {' • '}
                 <Link href={unsubscribeUrl} className="text-gray-400 underline">
                   Se désabonner
@@ -105,7 +105,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
     return (
       <Html>
       <Head />
-      <Preview>Welcome to Deltalytix - Your trading tracking platform</Preview>
+      <Preview>Welcome to QuntEdge - Your trading tracking platform</Preview>
       <Tailwind>
         <Body className="bg-gray-50 font-sans">
           <Section className="bg-white max-w-[600px] mx-auto rounded-lg shadow-xs">
@@ -115,7 +115,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               </Heading>
               
               <Text className="text-gray-800 mb-4 leading-6">
-                I&apos;m happy to count you among the users of Deltalytix!
+                I&apos;m happy to count you among the users of QuntEdge!
               </Text>
 
               <Text className="text-gray-800 mb-4 leading-6">
@@ -130,7 +130,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
                 <Link href={`https://youtu.be/${youtubeId}`}>
                   <Img
                     src={thumbnailUrl}
-                    alt="Latest Deltalytix video"
+                    alt="Latest QuntEdge video"
                     className="rounded-lg w-full mb-4 shadow-xs"
                   />
                 </Link>
@@ -153,7 +153,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               <Section className="text-center">
                 <Button 
                   className="bg-black text-white text-sm px-6 py-2.5 rounded-md font-medium box-border"
-                  href="https://deltalytix.app/dashboard"
+                  href="https://quntedge.app/dashboard"
                 >
                   Access my dashboard →
                 </Button>
@@ -162,7 +162,7 @@ export default function WelcomeEmail({ firstName = 'trader', email, language, yo
               <Hr className="border-gray-200 my-8" />
 
               <Text className="text-gray-400 text-xs text-center">
-                This email was sent by Deltalytix
+                This email was sent by QuntEdge
                 {' • '}
                 <Link href={unsubscribeUrl} className="text-gray-400 underline">
                   Unsubscribe

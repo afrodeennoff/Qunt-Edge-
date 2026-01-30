@@ -12,7 +12,7 @@ interface EmailTemplateSelectorProps {
 
 const templates: { value: EmailTemplate; label: string; description: string }[] = [
   { value: "black-friday", label: "Black Friday", description: "Limited-time promotion email" },
-  { value: "welcome", label: "Welcome", description: "Welcome new users to Deltalytix" },
+  { value: "welcome", label: "Welcome", description: "Welcome new users to QuntEdge" },
   { value: "weekly-recap", label: "Weekly Recap", description: "Weekly trading statistics" },
   { value: "new-feature", label: "New Feature", description: "Announce new product features" },
   { value: "renewal-notice", label: "Renewal Notice", description: "Prop firm renewal reminder" },

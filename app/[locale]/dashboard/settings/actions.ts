@@ -675,7 +675,7 @@ export async function sendTeamInvitation(teamId: string, traderEmail: string) {
 
     // Generate join URL
     const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 
-      (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://deltalytix.app')
+      (process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://quntedge.app')
     const joinUrl = `${baseUrl}/teams/join?invitation=${invitation.id}`
 
     // Render email
@@ -697,13 +697,13 @@ export async function sendTeamInvitation(teamId: string, traderEmail: string) {
 
     const resend = new Resend(process.env.RESEND_API_KEY)
     const { error: emailError } = await resend.emails.send({
-      from: 'Deltalytix Team <team@eu.updates.deltalytix.app>',
+      from: 'QuntEdge Team <team@eu.updates.quntedge.app>',
       to: traderEmail,
       subject: existingUser?.language === 'fr' 
-        ? `Invitation à rejoindre ${team.name} sur Deltalytix`
-        : `Invitation to join ${team.name} on Deltalytix`,
+        ? `Invitation à rejoindre ${team.name} sur QuntEdge`
+        : `Invitation to join ${team.name} on QuntEdge`,
       html: emailHtml,
-      replyTo: 'hugo.demenez@deltalytix.app',
+      replyTo: 'hugo.demenez@quntedge.app',
     })
 
     if (emailError) {

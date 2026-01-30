@@ -1,17 +1,8 @@
 'use server'
 
 import { createClient } from '@/server/auth'
-import { PrismaClient } from '@/prisma/generated/prisma/client'
-import { PrismaPg } from '@prisma/adapter-pg'
-import pg from 'pg'
+import { prisma } from '@/lib/prisma'
 import { WhopAPI } from '@/server/whop'
-
-const pool = new pg.Pool({
-  connectionString: process.env.DATABASE_URL,
-})
-
-const adapter = new PrismaPg(pool)
-const prisma = new PrismaClient({ adapter })
 
 export type SubscriptionWithPrice = {
   id: string
@@ -30,28 +21,30 @@ export async function getSubscriptionData(): Promise<SubscriptionWithPrice | nul
 
   if (!user?.email) return null
 
+  const userEmail = user.email
+
   // 1. Instant Local Check (Fast)
-  const localSubscription = await prisma.subscription.findUnique({
-    where: { email: user.email },
+  const localSubscription = await (prisma as any).subscription.findUnique({
+    where: { email: userEmail },
   })
 
     // 2. Background Validation (Lazy)
-    // We fire this off but do NOT await it for the UI return. 
+    // We fire this off but do NOT await it for the UI return.
     // This ensures "Instant Login" speed.
     // The validation runs on the server; if it detects a mismatch, it updates the DB.
     // The *next* request (or a client-side revalidation) will catch the update.
     (async () => {
       try {
-        const whopSubscription = await WhopAPI.getSubscriptionParam(user.email)
+        const whopSubscription = await WhopAPI.getSubscriptionParam(userEmail)
 
         // Sync Logic in Background
         if (whopSubscription) {
           // If Whop is active, ensure DB matches
-          await prisma.subscription.upsert({
-            where: { email: user.email },
+          await (prisma as any).subscription.upsert({
+            where: { email: userEmail },
             create: {
               userId: user.id || localSubscription?.userId || '',
-              email: user.email,
+              email: userEmail,
               status: 'ACTIVE',
               plan: whopSubscription.plan,
               interval: whopSubscription.interval,
@@ -67,8 +60,8 @@ export async function getSubscriptionData(): Promise<SubscriptionWithPrice | nul
         } else {
           // If Whop confirms NO subscription (null), but local says Active -> Revoke
           if (localSubscription && localSubscription.status === 'ACTIVE') {
-            console.log(`[Revocation] User ${user.email} has active local sub but no Whop sub. Revoking.`)
-            await prisma.subscription.update({
+            console.log(`[Revocation] User ${userEmail} has active local sub but no Whop sub. Revoking.`)
+            await (prisma as any).subscription.update({
               where: { id: localSubscription.id },
               data: { status: 'CANCELLED' }
             })

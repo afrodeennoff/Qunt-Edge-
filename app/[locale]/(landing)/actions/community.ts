@@ -399,7 +399,7 @@ async function sendCommentNotificationEmail({
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
-      from: 'Deltalytix Community <community@eu.updates.deltalytix.app>',
+      from: 'QuntEdge Community <community@eu.updates.quntedge.app>',
       to: recipientEmail,
       subject: language === 'fr' ? 'Nouveau commentaire sur votre publication' : 'New comment on your post',
       react: CommentNotificationEmail({
@@ -412,7 +412,7 @@ async function sendCommentNotificationEmail({
         unsubscribeUrl,
         language
       }),
-      replyTo: 'hugo.demenez@deltalytix.app'
+      replyTo: 'hugo.demenez@quntedge.app'
     })
   } catch (error) {
     console.error('Failed to send comment notification email:', error)

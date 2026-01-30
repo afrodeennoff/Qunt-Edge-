@@ -38,10 +38,10 @@ export async function POST(req: Request, props: { params: Promise<{ userid: stri
       return NextResponse.json({
         success: true,
         emailData: {
-          from: 'Deltalytix <newsletter@eu.updates.deltalytix.app>',
+          from: 'QuntEdge <newsletter@eu.updates.quntedge.app>',
           to: [newsletter.email],
-          replyTo: 'hugo.demenez@deltalytix.app',
-          subject: user.language === 'fr' ? 'Nous manquons de vous voir sur Deltalytix' : 'We miss you on Deltalytix',
+          replyTo: 'hugo.demenez@quntedge.app',
+          subject: user.language === 'fr' ? 'Nous manquons de vous voir sur QuntEdge' : 'We miss you on QuntEdge',
           html: missingYouEmailHtml
         }
       })
@@ -78,7 +78,7 @@ export async function POST(req: Request, props: { params: Promise<{ userid: stri
     return NextResponse.json({
       success: true,
       emailData: {
-        from: 'Deltalytix <newsletter@eu.updates.deltalytix.app>',
+        from: 'QuntEdge <newsletter@eu.updates.quntedge.app>',
         to: [user.email],
         subject: user.language === 'fr' ? 'Vos statistiques de trading de la semaine 📈' : 'Your trading statistics for the week 📈',
         html: weeklyStatsEmailHtml,
@@ -86,7 +86,7 @@ export async function POST(req: Request, props: { params: Promise<{ userid: stri
           'List-Unsubscribe': `<${unsubscribeUrl}>`,
           'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'
         },
-        replyTo: 'hugo.demenez@deltalytix.app'
+        replyTo: 'hugo.demenez@quntedge.app'
       }
     })
 

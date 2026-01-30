@@ -15,10 +15,10 @@ import {
 
 const copy = {
   en: {
-    preview: 'Black Friday: 50€ off Deltalytix Lifetime - Until Nov 30th',
+    preview: 'Black Friday: 50€ off QuntEdge Lifetime - Until Nov 30th',
     greeting: 'Hello {firstName},',
     intro:
-      "I wanted to reach out personally about a special Black Friday offer for Deltalytix users.",
+      "I wanted to reach out personally about a special Black Friday offer for QuntEdge users.",
     offer:
       "This week only, I'm offering 50€ off our Lifetime Plan. Instead of 300€, you can upgrade for 250€ and get lifetime access to all current and future features.",
     highlightTitle: 'Black Friday Special',
@@ -31,14 +31,14 @@ const copy = {
     support:
       'As always, if you have any questions about the platform or need help with your trading analysis, feel free to reach out.',
     closingLine1: 'Best regards,',
-    closingLine2: 'The Deltalytix Team',
+    closingLine2: 'The QuntEdge Team',
     unsubscribe: 'Unsubscribe',
   },
   fr: {
-    preview: 'Black Friday : 50€ de réduction sur Deltalytix Lifetime - Jusqu’au 30 nov.',
+    preview: 'Black Friday : 50€ de réduction sur QuntEdge Lifetime - Jusqu’au 30 nov.',
     greeting: 'Bonjour {firstName},',
     intro:
-      "Je voulais vous écrire personnellement pour vous parler d'une offre Black Friday réservée aux utilisateurs de Deltalytix.",
+      "Je voulais vous écrire personnellement pour vous parler d'une offre Black Friday réservée aux utilisateurs de QuntEdge.",
     offer:
       "Cette semaine uniquement, j'offre 50€ de réduction sur notre offre Lifetime. Au lieu de 300€, vous pouvez passer à 250€ et bénéficier d'un accès à vie à toutes les fonctionnalités actuelles et futures.",
     highlightTitle: 'Offre spéciale Black Friday',
@@ -109,7 +109,7 @@ const BlackFridayEmail = (props: { firstName: string; locale?: Locale }) => {
               <Section className="text-center mb-[32px]">
                 <Button
                   className="bg-[#007BFF] text-white text-[16px] px-[24px] py-[12px] rounded-[6px] font-medium box-border"
-                  href="https://deltalytix.app/pricing"
+                  href="https://quntedge.app/pricing"
                 >
                   {content.cta}
                 </Button>
@@ -128,8 +128,8 @@ const BlackFridayEmail = (props: { firstName: string; locale?: Locale }) => {
               <Hr className="border-gray-200 my-[24px]" />
 
               <Text className="text-gray-500 text-[12px] text-center m-0">
-                <Link href="https://deltalytix.app" className="text-gray-500 underline">
-                  Deltalytix
+                <Link href="https://quntedge.app" className="text-gray-500 underline">
+                  QuntEdge
                 </Link>
                 {' • '}
                 <Link href="#" className="text-gray-500 underline">

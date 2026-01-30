@@ -42,12 +42,12 @@ export default {
   "footer.legal.privacy": "Politique de confidentialité",
   "footer.legal.terms": "Conditions d'utilisation",
   "footer.legal.disclaimers": "Avertissements",
-  "footer.copyright": "© {year} Deltalytix. Tous droits réservés.",
+  "footer.copyright": "© {year} QuntEdge. Tous droits réservés.",
   "authentication.title": "Authentification",
   "authentication.description":
     "Entrez votre email pour vous connecter. Si vous n'avez pas encore de compte, nous le créerons automatiquement.",
   "authentication.testimonial":
-    "Deltalytix m'a aidé à comprendre mes comportements de trading et à trouver de nouvelles stratégies rentables.",
+    "QuntEdge m'a aidé à comprendre mes comportements de trading et à trouver de nouvelles stratégies rentables.",
   "authentication.testimonialAuthor": "Hugo DEMENEZ",
   "authentication.termsAndPrivacy": {
     prefix: "En cliquant sur continuer, vous acceptez nos",
@@ -55,9 +55,9 @@ export default {
     and: "et",
     privacy: "Politique de confidentialité",
   },
-  "updates.title": "Feuille de route du produit Deltalytix",
+  "updates.title": "Feuille de route du produit QuntEdge",
   "updates.description":
-    "Nous travaillons constamment à l'amélioration de Deltalytix pour vous offrir la meilleure plateforme d'analyse de trading. Voici un aperçu de nos progrès actuels, des fonctionnalités à venir et des mises à jour récentes.",
+    "Nous travaillons constamment à l'amélioration de QuntEdge pour vous offrir la meilleure plateforme d'analyse de trading. Voici un aperçu de nos progrès actuels, des fonctionnalités à venir et des mises à jour récentes.",
   "updates.inProgress": "En cours",
   "updates.upcoming": "Fonctionnalités à venir",
   "updates.completed": "Fonctionnalités terminées",
@@ -80,7 +80,7 @@ export default {
   "updates.inFiveWeeks": "Dans 5 semaines",
   "updates.milestone1.title": "Fonctionnalités de base",
   "updates.milestone1.description":
-    "Nous avons posé les bases de Deltalytix avec des fonctionnalités essentielles. Vous pouvez maintenant traiter des données CSV, visualiser les trades sur un calendrier et accéder à des analyses de base. Nous avons également mis en place l'authentification et migré vers une base de données Postgres robuste.",
+    "Nous avons posé les bases de QuntEdge avec des fonctionnalités essentielles. Vous pouvez maintenant traiter des données CSV, visualiser les trades sur un calendrier et accéder à des analyses de base. Nous avons également mis en place l'authentification et migré vers une base de données Postgres robuste.",
   "updates.milestone2.title": "Traitement de données amélioré",
   "updates.milestone2.description":
     "Notre dernière mise à jour apporte une cartographie des champs assistée par IA et la prise en charge de plusieurs formats CSV, y compris Tradovate et Rithmic. Nous avons également mis en place le chiffrement des données pour une sécurité accrue et amélioré nos calculs de commission pour des rapports plus précis.",
@@ -95,16 +95,16 @@ export default {
     "Nous avons introduit des options d'abonnement flexibles pour répondre aux différents besoins des traders. Choisissez parmi les plans Basic à Premium, disponibles en abonnements mensuels et annuels. Chaque niveau offre un ensemble unique de fonctionnalités pour soutenir votre parcours de trading.",
   "updates.milestone6.title": "Mode sombre",
   "updates.milestone6.description":
-    "Nous avons implémenté une option de mode sombre, permettant aux utilisateurs d'utiliser confortablement Deltalytix dans des environnements peu éclairés et de réduire la fatigue oculaire pendant les longues sessions d'analyse.",
+    "Nous avons implémenté une option de mode sombre, permettant aux utilisateurs d'utiliser confortablement QuntEdge dans des environnements peu éclairés et de réduire la fatigue oculaire pendant les longues sessions d'analyse.",
   "updates.milestone7.title": "Optimisation mobile et gestion des données",
   "updates.milestone7.description":
     "Nous travaillons activement à l'amélioration de la vue mobile pour une expérience fluide sur tous les appareils. De plus, nous améliorons la gestion des données importées avec des fonctionnalités telles que le tri et la possibilité de déplacer des trades vers des comptes séparés. Pour aider les utilisateurs, nous créons également des tutoriels d'importation complets.",
   "updates.milestone8.title": "Importation automatique depuis Rithmic",
   "updates.milestone8.description":
-    "Nous collaborons étroitement avec Rithmic pour mettre en place l'importation automatique des données, simplifiant le processus d'intégration de vos données de trading dans Deltalytix.",
+    "Nous collaborons étroitement avec Rithmic pour mettre en place l'importation automatique des données, simplifiant le processus d'intégration de vos données de trading dans QuntEdge.",
   "updates.milestone9.title": "Importation depuis Interactive Broker et AMP",
   "updates.milestone9.description":
-    "Nous élargissons nos capacités d'importation pour inclure le support d'Interactive Broker et AMP, vous offrant plus de flexibilité dans la façon dont vous intégrez vos données de trading dans Deltalytix.",
+    "Nous élargissons nos capacités d'importation pour inclure le support d'Interactive Broker et AMP, vous offrant plus de flexibilité dans la façon dont vous intégrez vos données de trading dans QuntEdge.",
   "updates.milestone10.title": "Réflexion personnelle",
   "updates.milestone10.description":
     "Nous avons ajouté un puissant outil d'auto-réflexion qui vous aide à analyser votre trading et vos émotions. Cette fonctionnalité vous guide à travers des sessions de réflexion structurées pour mieux comprendre votre processus de décision et améliorer votre psychologie de trading.",
@@ -1596,7 +1596,7 @@ export default {
   "calendar.charts.weeklyMaxProfit": "Profit maximum hebdomadaire",
   "calendar.charts.dailyMaxProfit": "Profit maximum quotidien",
   "calendar.charts.remaining": "restant",
-  "onboarding.welcome": "Bienvenue sur Deltalytix !",
+  "onboarding.welcome": "Bienvenue sur QuntEdge !",
   "onboarding.description":
     "Regardez ce tutoriel rapide pour commencer votre parcours de trading",
   "onboarding.getStarted": "Commencer",
@@ -1732,7 +1732,7 @@ export default {
   },
   support: {
     greeting:
-      "Bienvenue dans l'Assistant Support Deltalytix ! Je suis là pour vous aider à rassembler tous les détails nécessaires concernant votre problème ou votre question. Mon objectif est de collecter le bon contexte pour que votre message puisse être transmis efficacement à notre équipe de support client, qui vous recontactera par email.",
+      "Bienvenue dans l'Assistant Support QuntEdge ! Je suis là pour vous aider à rassembler tous les détails nécessaires concernant votre problème ou votre question. Mon objectif est de collecter le bon contexte pour que votre message puisse être transmis efficacement à notre équipe de support client, qui vous recontactera par email.",
     inputPlaceholder: "Décrivez votre problème ou votre question ici...",
     search: "Rechercher",
     retry: "Réessayer",
@@ -1802,7 +1802,7 @@ export default {
     contactDescription:
       "Si vous avez besoin d'une assistance immédiate, veuillez contacter notre équipe de support.",
     email: {
-      preview: "Nouvelle demande de support de Deltalytix",
+      preview: "Nouvelle demande de support de QuntEdge",
       title: "Nouvelle demande de support",
       summary: "Résumé :",
       contactInformation: "Informations de contact :",

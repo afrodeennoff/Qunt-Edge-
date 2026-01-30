@@ -35,7 +35,7 @@ export default function NewsletterEmail({
   return (
     <Html>
       <Head />
-      <Preview>Nouveautés sur Deltalytix - Votre plateforme de suivi de trading</Preview>
+      <Preview>Nouveautés sur QuntEdge - Votre plateforme de suivi de trading</Preview>
       <Tailwind>
         <Body className="bg-gray-50 font-sans">
           <Section className="bg-white max-w-[600px] mx-auto rounded-lg shadow-xs">
@@ -52,7 +52,7 @@ export default function NewsletterEmail({
                 <Link href={`https://youtu.be/${youtubeId}`}>
                   <Img
                     src={thumbnailUrl}
-                    alt="Dernière vidéo Deltalytix"
+                    alt="Dernière vidéo QuntEdge"
                     className="rounded-lg w-full mb-4 shadow-xs"
                   />
                 </Link>
@@ -83,7 +83,7 @@ export default function NewsletterEmail({
               <Section className="text-center">
                 <Button 
                   className="bg-black text-white text-sm px-6 py-2.5 rounded-md font-medium box-border"
-                  href="https://deltalytix.app/dashboard"
+                  href="https://quntedge.app/dashboard"
                 >
                   Accéder à mon tableau de bord →
                 </Button>
@@ -92,13 +92,13 @@ export default function NewsletterEmail({
               <Text className="text-gray-800 mt-8 mb-4">
                 Hugo DEMENEZ
                 <br />
-                <span className="text-gray-600">Fondateur de Deltalytix</span>
+                <span className="text-gray-600">Fondateur de QuntEdge</span>
               </Text>
 
               <Hr className="border-gray-200 my-8" />
 
               <Text className="text-gray-400 text-xs text-center">
-                Cet email vous a été envoyé par Deltalytix
+                Cet email vous a été envoyé par QuntEdge
                 {' • '}
                 <Link href={unsubscribeUrl} className="text-gray-400 underline">
                   Se désabonner

@@ -87,7 +87,7 @@ export async function getDefaultTemplateProps(template: EmailTemplate): Promise<
         youtubeId: "ZBrIZpCh_7Q",
         introMessage: "Sample intro message",
         features: ["Feature 1", "Feature 2"],
-        unsubscribeUrl: "https://deltalytix.app/api/email/unsubscribe?email=user%40example.com",
+        unsubscribeUrl: "https://quntedge.app/api/email/unsubscribe?email=user%40example.com",
       }
     case "renewal-notice":
       return {
@@ -99,7 +99,7 @@ export async function getDefaultTemplateProps(template: EmailTemplate): Promise<
         daysUntilRenewal: 7,
         paymentFrequency: "monthly",
         language: "en",
-        unsubscribeUrl: "https://deltalytix.app/api/email/unsubscribe?email=user%40example.com",
+        unsubscribeUrl: "https://quntedge.app/api/email/unsubscribe?email=user%40example.com",
       }
     case "team-invitation":
       return {
@@ -107,7 +107,7 @@ export async function getDefaultTemplateProps(template: EmailTemplate): Promise<
         teamName: "Sample Team",
         inviterName: "John Doe",
         inviterEmail: "john@example.com",
-        joinUrl: "https://deltalytix.app",
+        joinUrl: "https://quntedge.app",
         language: "en",
       }
     case "missing-data":
@@ -320,7 +320,7 @@ export async function sendEmailsToUsers(
     for (const batch of batches) {
       try {
         const emailBatch = batch.map((user) => {
-          const unsubscribeUrl = `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(user.email)}`
+          const unsubscribeUrl = `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(user.email)}`
           const mergedProps: TemplateProps = {
             ...customProps,
             firstName: user.firstName,
@@ -334,10 +334,10 @@ export async function sendEmailsToUsers(
           const emailSubject = subject || getDefaultSubject(template, user.language)
 
           return {
-            from: "Deltalytix <updates@eu.updates.deltalytix.app>",
+            from: "QuntEdge <updates@eu.updates.quntedge.app>",
             to: [user.email],
             subject: emailSubject,
-            reply_to: "hugo.demenez@deltalytix.app",
+            reply_to: "hugo.demenez@quntedge.app",
             react: React.createElement(EmailComponent, mergedProps),
             headers: {
               "List-Unsubscribe": `<${unsubscribeUrl}>`,
@@ -364,32 +364,32 @@ export async function sendEmailsToUsers(
 function getDefaultSubject(template: EmailTemplate, language: string): string {
   const subjects: Record<EmailTemplate, { en: string; fr: string }> = {
     "black-friday": {
-      en: "Black Friday: 50€ off Deltalytix Lifetime - Until Nov 30th",
-      fr: "Black Friday : 50€ de réduction sur Deltalytix Lifetime - Jusqu'au 30 nov",
+      en: "Black Friday: 50€ off QuntEdge Lifetime - Until Nov 30th",
+      fr: "Black Friday : 50€ de réduction sur QuntEdge Lifetime - Jusqu'au 30 nov",
     },
     welcome: {
-      en: "Welcome to Deltalytix",
-      fr: "Bienvenue sur Deltalytix",
+      en: "Welcome to QuntEdge",
+      fr: "Bienvenue sur QuntEdge",
     },
     "weekly-recap": {
-      en: "Your weekly trading statistics - Deltalytix",
-      fr: "Vos statistiques de trading de la semaine - Deltalytix",
+      en: "Your weekly trading statistics - QuntEdge",
+      fr: "Vos statistiques de trading de la semaine - QuntEdge",
     },
     "new-feature": {
-      en: "New features on Deltalytix",
-      fr: "Nouveautés sur Deltalytix",
+      en: "New features on QuntEdge",
+      fr: "Nouveautés sur QuntEdge",
     },
     "renewal-notice": {
       en: "Account Renewal Notice",
       fr: "Avis de renouvellement de compte",
     },
     "team-invitation": {
-      en: "You've been invited to join a team on Deltalytix",
-      fr: "Vous avez été invité à rejoindre une équipe sur Deltalytix",
+      en: "You've been invited to join a team on QuntEdge",
+      fr: "Vous avez été invité à rejoindre une équipe sur QuntEdge",
     },
     "missing-data": {
-      en: "We miss seeing you on Deltalytix",
-      fr: "Vous nous manquez sur Deltalytix",
+      en: "We miss seeing you on QuntEdge",
+      fr: "Vous nous manquez sur QuntEdge",
     },
     "support-request": {
       en: "New Support Request",

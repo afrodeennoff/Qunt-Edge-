@@ -241,7 +241,7 @@ export default function Component() {
             title: t('landing.navbar.developers'),
             children: [
                 {
-                    path: "https://github.com/hugodemenez/deltalytix",
+                    path: "https://github.com/hugodemenez/quntedge",
                     title: t('landing.navbar.openSource'),
                     icon: <SiGithub className="h-4 w-4" />,
                 },
@@ -278,7 +278,7 @@ export default function Component() {
             <header className={`max-w-7xl mx-auto fixed top-0 left-0 right-0 px-4 lg:px-6 h-14 flex items-center justify-between z-50  text-foreground transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <Link href="/" className="flex items-center space-x-2">
                     <Logo className='w-6 h-6 fill-black dark:fill-white' />
-                    <span className="font-bold text-xl">Deltalytix</span>
+                    <span className="font-bold text-xl">QuntEdge</span>
                 </Link>
                 <div className="hidden lg:block">
                     <NavigationMenu>
@@ -292,7 +292,7 @@ export default function Component() {
                                                 <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-6 no-underline outline-hidden focus:shadow-md" href="/">
                                                     <Logo className='w-6 h-6' />
                                                     <div className="mb-2 mt-4 text-lg font-medium">
-                                                        Deltalytix
+                                                        QuntEdge
                                                     </div>
                                                     <p className="text-sm leading-tight text-muted-foreground">
                                                         {t('landing.navbar.elevateTrading')}
@@ -347,7 +347,7 @@ export default function Component() {
                                 <NavigationMenuTrigger className='bg-transparent'>{t('landing.navbar.developers')}</NavigationMenuTrigger>
                                 <NavigationMenuContent onMouseEnter={() => setHoveredItem('developers')} onMouseLeave={() => setHoveredItem(null)}>
                                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] list-none">
-                                        <ListItem href="https://github.com/hugodemenez/deltalytix" title={t('landing.navbar.openSource')} icon={<SiGithub className="h-4 w-4" />}>
+                                        <ListItem href="https://github.com/hugodemenez/quntedge" title={t('landing.navbar.openSource')} icon={<SiGithub className="h-4 w-4" />}>
                                             {t('landing.navbar.openSourceDescription')}
                                         </ListItem>
                                         <ListItem href="https://www.youtube.com/@hugodemenez" title="YouTube" icon={<FileText className="h-4 w-4" />}>
@@ -445,7 +445,7 @@ export default function Component() {
                             whileTap={{ scale: 0.95 }}
                             transition={{ duration: 0.1 }}
                         >
-                            <span className="sr-only">Deltalytix Logo</span>
+                            <span className="sr-only">QuntEdge Logo</span>
                             <Logo className='w-6 h-6 fill-black dark:fill-white' />
                         </motion.button>
 

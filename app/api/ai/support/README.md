@@ -1,4 +1,4 @@
-# Deltalytix Support Assistant - Refined System
+# QuntEdge Support Assistant - Refined System
 
 ## Overview
 The support assistant has been refined to provide immediate, helpful responses while gathering comprehensive context with minimal questions. The system now focuses on efficiency and problem-solving rather than endless clarification.

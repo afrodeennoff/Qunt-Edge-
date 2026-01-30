@@ -1,7 +1,7 @@
 # AGENTS.md
 
-## What is Deltalytix?
-Deltalytix is a trading analytics platform that helps futures and prop-firm traders
+## What is QuntEdge?
+QuntEdge is a trading analytics platform that helps futures and prop-firm traders
 turn raw trade history into clear insights, better habits, and consistent results.
 
 ## Who it is for

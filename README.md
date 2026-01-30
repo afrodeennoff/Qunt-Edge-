@@ -1,7 +1,7 @@
-# Deltalytix
+# QuntEdge
 
 <div align="center">
-  <img src="public/apple-icon.png" alt="Deltalytix Logo" width="120" height="120">
+  <img src="public/apple-icon.png" alt="QuntEdge Logo" width="120" height="120">
   
   <h3>Open-source trading analytics platform for professional traders</h3>
   
@@ -11,9 +11,9 @@
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
   [![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/a5YVF5Ec2n)
   
-  <a href="https://trustmrr.com/startup/deltalytix" target="_blank"><img src="https://trustmrr.com/api/embed/deltalytix?format=svg" alt="TrustMRR verified revenue badge" width="220" height="90" /></a>
+  <a href="https://trustmrr.com/startup/quntedge" target="_blank"><img src="https://trustmrr.com/api/embed/quntedge?format=svg" alt="TrustMRR verified revenue badge" width="220" height="90" /></a>
   
-  [🚀 Live Demo](https://deltalytix.app) • [💬 Discord Community](https://discord.gg/a5YVF5Ec2n) • [🐛 Report Bug](https://github.com/hugodemenez/deltalytix/issues)
+  [🚀 Live Demo](https://quntedge.app) • [💬 Discord Community](https://discord.gg/a5YVF5Ec2n) • [🐛 Report Bug](https://github.com/hugodemenez/quntedge/issues)
 </div>
 
 ---
@@ -132,8 +132,8 @@ Before you begin, ensure you have the following:
 ### Step 1: Clone and Install
 
 ```bash
-git clone https://github.com/hugodemenez/deltalytix.git
-cd deltalytix
+git clone https://github.com/hugodemenez/quntedge.git
+cd quntedge
 npm install  # or bun install
 ```
 
@@ -229,7 +229,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 ## 📁 Project Structure
 
 ```
-deltalytix/
+quntedge/
 ├── app/                    # Next.js App Router
 │   ├── [locale]/          # Internationalized routes
 │   │   ├── dashboard/     # Main dashboard pages
@@ -303,7 +303,7 @@ const t = useI18n()
 
 ## 🤝 Contributing
 
-We welcome contributions to Deltalytix! Here's how you can help:
+We welcome contributions to QuntEdge! Here's how you can help:
 
 ### Getting Started
 
@@ -351,7 +351,7 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial 
 
 ### What This Means:
 
-This license allows you to use Deltalytix for personal, educational, and non-commercial purposes. You can modify and share the code as long as you give proper attribution and don't use it commercially.
+This license allows you to use QuntEdge for personal, educational, and non-commercial purposes. You can modify and share the code as long as you give proper attribution and don't use it commercially.
 
 **For commercial licensing options, please contact us.**
 
@@ -380,7 +380,7 @@ Read the full license text in the [LICENSE](LICENSE) file.
 
 ### Contributors
 
-Thank you to all the contributors who help make Deltalytix better!
+Thank you to all the contributors who help make QuntEdge better!
 
 ### Open Source Projects
 
@@ -395,7 +395,7 @@ This project builds upon many excellent open source libraries:
 
 ### Inspiration
 
-Deltalytix was inspired by the need for better trading analytics tools in the open source community.
+QuntEdge was inspired by the need for better trading analytics tools in the open source community.
 
 ---
 
@@ -435,7 +435,7 @@ Deltalytix was inspired by the need for better trading analytics tools in the op
 
 ### 🚀 Long-term Vision (2027+)
 
-- [ ] **Third-Party Dashboard Licensing** - Prop firms can embed Deltalytix directly into their platforms
+- [ ] **Third-Party Dashboard Licensing** - Prop firms can embed QuntEdge directly into their platforms
 - [ ] **Interactive Brokers API Integration** - Direct sync replacing PDF imports for real-time data
 - [ ] **Advanced Market Analytics** - Deep market insights powered by Databento data feeds
 - [ ] **White-Label Solutions** - Customizable platform for trading firms and educational institutions
@@ -452,11 +452,11 @@ Deltalytix was inspired by the need for better trading analytics tools in the op
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Hugo DEMENEZ & the Deltalytix community</p>
+  <p>Made with ❤️ by Hugo DEMENEZ & the QuntEdge community</p>
   <p>
-    <a href="https://github.com/hugodemenez/deltalytix">GitHub</a> •
+    <a href="https://github.com/hugodemenez/quntedge">GitHub</a> •
     <a href="https://discord.gg/a5YVF5Ec2n">Discord</a> •
-    <a href="https://deltalytix.app">Website</a>
+    <a href="https://quntedge.app">Website</a>
   </p>
 </div>
 

@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n()
   
   return {
-    title: `${t('landing.propfirms.title')} - Deltalytix`,
+    title: `${t('landing.propfirms.title')} - QuntEdge`,
     description: t('landing.propfirms.description'),
   }
 }

@@ -207,7 +207,7 @@ export async function GET(req: NextRequest) {
 
   // Set font to measure text width
   ctx.font = 'bold 128px Inter, sans-serif';
-  const text = 'Deltalytix';
+  const text = 'QuntEdge';
   const textMetrics = ctx.measureText(text);
   const textWidth = textMetrics.width;
 
@@ -221,7 +221,7 @@ export async function GET(req: NextRequest) {
   // Draw logo centered vertically
   ctx.drawImage(logoImage, logoX, logoY - logoSize / 2, logoSize, logoSize);
 
-  // Draw text "Deltalytix" - positioned to the right of the logo and vertically centered
+  // Draw text "QuntEdge" - positioned to the right of the logo and vertically centered
   ctx.fillStyle = '#ffffff';
   ctx.textAlign = 'left';
   ctx.textBaseline = 'middle';

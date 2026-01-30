@@ -4,12 +4,12 @@ export default {
         sections: {
             companyInfo: {
                 title: "1. Informations sur l'entreprise",
-                content: "Deltalytix est détenu et exploité par Hugo DEMENEZ, opérant en tant qu'entreprise individuelle.",
+                content: "QuntEdge est détenu et exploité par Hugo DEMENEZ, opérant en tant qu'entreprise individuelle.",
                 contact: "Contact : "
             },
             services: {
                 title: "2. Services",
-                content: "Deltalytix fournit l'accès à un tableau de bord de plateforme offrant des services d'analyse avancée pour les traders modernes. Nous hébergeons les données des transactions via Supabase, un service conforme SOC 2."
+                content: "QuntEdge fournit l'accès à un tableau de bord de plateforme offrant des services d'analyse avancée pour les traders modernes. Nous hébergeons les données des transactions via Supabase, un service conforme SOC 2."
             },
             userAccounts: {
                 title: "3. Comptes utilisateur et données",
@@ -22,9 +22,9 @@ export default {
                 fairUse: "Le terme \"illimité\" s'entend dans le cadre d'un usage normal et non abusif du service. Nous nous réservons le droit de limiter ou restreindre l'usage en cas d'utilisation excessive ou contraire à la finalité de la plateforme.",
                 lifetimePlan: {
                     title: "Conditions du plan à vie",
-                    description: "Le plan \"À vie\" fournit l'accès au service Deltalytix pour la durée de vie opérationnelle du service, sous réserve des conditions suivantes :",
+                    description: "Le plan \"À vie\" fournit l'accès au service QuntEdge pour la durée de vie opérationnelle du service, sous réserve des conditions suivantes :",
                     condition1: "Le plan à vie garantit l'accès pour une période minimale d'un (1) an à compter de la date d'achat.",
-                    condition2: "\"À vie\" fait référence à la durée de vie opérationnelle du service Deltalytix, pas à la durée de vie de l'utilisateur.",
+                    condition2: "\"À vie\" fait référence à la durée de vie opérationnelle du service QuntEdge, pas à la durée de vie de l'utilisateur.",
                     condition3: "Nous nous réservons le droit de cesser le service avec un préavis écrit de 90 jours aux détenteurs de plan à vie.",
                     condition4: "En cas de cessation du service avant la période minimale d'un an, les détenteurs de plan à vie recevront un remboursement au prorata pour la période garantie restante.",
                     condition5: "Le plan à vie ne garantit pas de fonctionnalités, mises à jour ou niveaux de support spécifiques au-delà de ce qui est offert aux abonnés actifs au moment de la cessation.",
@@ -33,7 +33,7 @@ export default {
             },
             intellectualProperty: {
                 title: "5. Propriété intellectuelle",
-                content: "Deltalytix possède tous les droits de propriété intellectuelle liés à notre service. Les utilisateurs ne sont pas autorisés à copier ou reproduire notre service. Notre code est sous licence selon les termes spécifiés dans notre fichier LICENSE, qui est la Licence Publique Générale GNU Affero version 3."
+                content: "QuntEdge possède tous les droits de propriété intellectuelle liés à notre service. Les utilisateurs ne sont pas autorisés à copier ou reproduire notre service. Notre code est sous licence selon les termes spécifiés dans notre fichier LICENSE, qui est la Licence Publique Générale GNU Affero version 3."
             },
             dataProtection: {
                 title: "6. Protection des données et confidentialité",
@@ -42,7 +42,7 @@ export default {
             },
             liability: {
                 title: "7. Limitation de responsabilité",
-                content: "Dans toute la mesure permise par la loi applicable, Deltalytix ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif, ou de toute perte de profits ou de revenus, qu'elle soit subie directement ou indirectement, ou de toute perte de données, d'utilisation, de clientèle ou d'autres pertes intangibles résultant de (a) votre utilisation ou incapacité à utiliser le service ; (b) tout accès non autorisé à ou utilisation de nos serveurs et/ou de toute information personnelle qui y est stockée."
+                content: "Dans toute la mesure permise par la loi applicable, QuntEdge ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif, ou de toute perte de profits ou de revenus, qu'elle soit subie directement ou indirectement, ou de toute perte de données, d'utilisation, de clientèle ou d'autres pertes intangibles résultant de (a) votre utilisation ou incapacité à utiliser le service ; (b) tout accès non autorisé à ou utilisation de nos serveurs et/ou de toute information personnelle qui y est stockée."
             },
             termination: {
                 title: "8. Résiliation",

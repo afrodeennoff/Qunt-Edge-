@@ -53,7 +53,7 @@ const admin = {
   "admin.sendEmail.templates.blackFriday.label": "Black Friday",
   "admin.sendEmail.templates.blackFriday.description": "Limited-time promotion email.",
   "admin.sendEmail.templates.welcome.label": "Welcome",
-  "admin.sendEmail.templates.welcome.description": "Welcome new users to Deltalytix.",
+  "admin.sendEmail.templates.welcome.description": "Welcome new users to QuntEdge.",
   "admin.sendEmail.templates.weeklyRecap.label": "Weekly recap",
   "admin.sendEmail.templates.weeklyRecap.description": "Share weekly trading statistics.",
   "admin.sendEmail.templates.newFeature.label": "New feature",

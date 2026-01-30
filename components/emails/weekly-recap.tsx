@@ -34,7 +34,7 @@ interface TraderStatsEmailProps {
 
 const translations = {
   fr: {
-    preview: 'Vos statistiques de trading de la semaine - Deltalytix',
+    preview: 'Vos statistiques de trading de la semaine - QuntEdge',
     greeting: 'Bonjour',
     disclaimer: 'Cette analyse, effectuée sur les 14 derniers jours par un algorithme, peut contenir des erreurs.',
     dailyPerformance: 'Performances Journalières',
@@ -43,9 +43,9 @@ const translations = {
     losses: 'Pertes',
     successRate: 'Taux de réussite',
     detailedStats: 'Voir mes statistiques détaillées →',
-    founder: 'Fondateur de Deltalytix',
+    founder: 'Fondateur de QuntEdge',
     unsubscribe: 'Se désabonner',
-    sentBy: 'Cet email vous a été envoyé par Deltalytix',
+    sentBy: 'Cet email vous a été envoyé par QuntEdge',
     weekdays: ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven'],
     warmUpMessage: 'Je vois que cette semaine a été difficile. Je serais ravi de discuter avec vous pour comprendre vos défis et vous aider à améliorer vos performances. Prenons rendez-vous pour un appel personnalisé.',
     scheduleCall: 'Planifier un appel* →',
@@ -75,7 +75,7 @@ const translations = {
     callDisclaimer: '*Cet appel est 100% gratuit. Profitez-en pour échanger avec un autre trader et réfléchir à votre trading.',
   },
   en: {
-    preview: 'Your weekly trading statistics - Deltalytix',
+    preview: 'Your weekly trading statistics - QuntEdge',
     greeting: 'Hello',
     disclaimer: 'This analysis, performed over the last 14 days by an algorithm, may contain errors.',
     dailyPerformance: 'Daily Performance',
@@ -84,9 +84,9 @@ const translations = {
     losses: 'Losses',
     successRate: 'Success Rate',
     detailedStats: 'View my detailed statistics →',
-    founder: 'Founder of Deltalytix',
+    founder: 'Founder of QuntEdge',
     unsubscribe: 'Unsubscribe',
-    sentBy: 'This email was sent to you by Deltalytix',
+    sentBy: 'This email was sent to you by QuntEdge',
     weekdays: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
     warmUpMessage: 'I see this week has been challenging. I\'d love to discuss your challenges and help you improve your performance. Let\'s schedule a personalized call.',
     scheduleCall: 'Schedule a call* →',
@@ -289,7 +289,7 @@ const ActionButtons = ({ t }: { t: typeof translations.fr }) => (
           <td className="w-[50%] pr-[8px]">
             <div className="bg-[#3469DF] rounded-[6px] text-center py-[12px] px-[16px] box-border">
               <Link
-                href="https://cal.com/hugo-demenez/deltalytix-discussion"
+                href="https://cal.com/hugo-demenez/quntedge-discussion"
                 className="text-white font-medium no-underline text-[14px]"
               >
                 {t.bookCall}
@@ -299,7 +299,7 @@ const ActionButtons = ({ t }: { t: typeof translations.fr }) => (
           <td className="w-[50%] pl-[8px]">
             <div className="bg-white border border-[#3469DF] rounded-[6px] text-center py-[12px] px-[16px] box-border">
               <Link
-                href="https://deltalytix.app/dashboard"
+                href="https://quntedge.app/dashboard"
                 className="text-[#3469DF] font-medium no-underline text-[14px]"
               >
                 {t.visitDashboard}
@@ -340,7 +340,7 @@ export default function TraderStatsEmail({
   const t = translations[language as keyof typeof translations] || translations.fr;
 
   const unsubscribeUrl = email
-    ? `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
+    ? `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
     : '#';
 
   // Calculate win rate percentage

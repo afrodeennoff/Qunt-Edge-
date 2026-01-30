@@ -56,7 +56,7 @@ export const PnlSummaryCard = () => {
                                             "bg-zinc-500 group-hover:bg-primary"
                                         )}></span>
                                         <span className="font-bold text-foreground text-xs md:text-sm">
-                                            {acc.name}
+                                            {acc.number}
                                         </span>
                                     </div>
                                     <span className={cn(

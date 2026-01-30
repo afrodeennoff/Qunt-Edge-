@@ -39,7 +39,7 @@ export default function TeamPage() {
   useEffect(() => {
     // Cal.com initialization
     (async function () {
-      const cal = await getCalApi({"namespace":"deltalytix-team"});
+      const cal = await getCalApi({"namespace":"quntedge-team"});
       cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, [])
@@ -138,8 +138,8 @@ export default function TeamPage() {
                 </Link>
                 <button 
                   className="flex justify-center items-center px-8 py-2.5 h-10 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-[0_0_0_6px_rgba(107,114,128,0.1),0_0_0_2px_rgba(107,114,128,0.25),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_0_0_6px_rgba(107,114,128,0.2),0_0_0_2px_rgba(107,114,128,0.35),0_2px_4px_rgba(0,0,0,0.2),0_2px_3px_-1px_rgba(0,0,0,0.2)] dark:shadow-[0_0_0_6px_rgba(156,163,175,0.1),0_0_0_2px_rgba(156,163,175,0.25),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_0_6px_rgba(156,163,175,0.2),0_0_0_2px_rgba(156,163,175,0.35),0_2px_4px_rgba(0,0,0,0.2),0_2px_3px_-1px_rgba(0,0,0,0.2)] rounded-xl transition-all duration-200"
-                  data-cal-namespace="deltalytix-team"
-                  data-cal-link="hugo-demenez/deltalytix-team"
+                  data-cal-namespace="quntedge-team"
+                  data-cal-link="hugo-demenez/quntedge-team"
                   data-cal-config='{"layout":"month_view"}'
                 >
                   <span className="font-medium text-sm text-gray-900 dark:text-white">{t('teams.cta.secondary')} <span aria-hidden="true">→</span></span>
@@ -261,8 +261,8 @@ export default function TeamPage() {
                 </Link>
                 <button 
                   className="flex justify-center items-center px-8 py-2.5 h-10 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 border border-gray-300 dark:border-gray-700 shadow-[0_0_0_6px_rgba(107,114,128,0.1),0_0_0_2px_rgba(107,114,128,0.25),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] hover:shadow-[0_0_0_6px_rgba(107,114,128,0.2),0_0_0_2px_rgba(107,114,128,0.35),0_2px_4px_rgba(0,0,0,0.2),0_2px_3px_-1px_rgba(0,0,0,0.2)] dark:shadow-[0_0_0_6px_rgba(156,163,175,0.1),0_0_0_2px_rgba(156,163,175,0.25),0_1px_3px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_0_6px_rgba(156,163,175,0.2),0_0_0_2px_rgba(156,163,175,0.35),0_2px_4px_rgba(0,0,0,0.2),0_2px_3px_-1px_rgba(0,0,0,0.2)] rounded-xl transition-all duration-200"
-                  data-cal-namespace="deltalytix-team"
-                  data-cal-link="hugo-demenez/deltalytix-team"
+                  data-cal-namespace="quntedge-team"
+                  data-cal-link="hugo-demenez/quntedge-team"
                   data-cal-config='{"layout":"month_view"}'
                 >
                   <span className="font-medium text-sm text-gray-900 dark:text-white">{t('teams.cta.demo.button')}</span>

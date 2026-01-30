@@ -260,7 +260,7 @@ export default function Sidebar() {
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
                                     onClick={() => {
-                                        localStorage.removeItem('deltalytix_user_data');
+                                        localStorage.removeItem('quntedge_user_data');
                                         signOut();
                                     }}
                                     className="ml-auto p-1.5 rounded-md hover:bg-destructive/10 hover:text-destructive transition-colors"

@@ -31,31 +31,31 @@ const CommentNotificationEmail = ({
   commentContent,
   commentDate,
   recipientName,
-  unsubscribeUrl = 'https://deltalytix.app/settings/notifications',
+  unsubscribeUrl = 'https://quntedge.app/settings/notifications',
   language = 'fr'
 }: CommentNotificationEmailProps) => {
   const t = {
     fr: {
-      preview: 'Nouveau commentaire sur votre publication Deltalytix',
+      preview: 'Nouveau commentaire sur votre publication QuntEdge',
       greeting: 'Bonjour',
-      notification: 'Bonne nouvelle ! Quelqu\'un vient de commenter votre publication sur Deltalytix.',
+      notification: 'Bonne nouvelle ! Quelqu\'un vient de commenter votre publication sur QuntEdge.',
       article: 'Publication',
       viewComment: 'Voir le commentaire',
       footer: {
-        text: 'Deltalytix - Analyses avancées pour traders modernes',
+        text: 'QuntEdge - Analyses avancées pour traders modernes',
         help: 'Besoin d\'aide ? Rejoignez notre',
         community: 'communauté Discord',
         unsubscribe: 'Se désabonner des notifications de commentaires'
       }
     },
     en: {
-      preview: 'New comment on your Deltalytix post',
+      preview: 'New comment on your QuntEdge post',
       greeting: 'Hello',
-      notification: 'Great news! Someone just commented on your post on Deltalytix.',
+      notification: 'Great news! Someone just commented on your post on QuntEdge.',
       article: 'Post',
       viewComment: 'View comment',
       footer: {
-        text: 'Deltalytix - Advanced Analytics for Modern Traders',
+        text: 'QuntEdge - Advanced Analytics for Modern Traders',
         help: 'Need help? Join our',
         community: 'Discord community',
         unsubscribe: 'Unsubscribe from comment notifications'

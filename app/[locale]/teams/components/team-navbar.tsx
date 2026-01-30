@@ -195,7 +195,7 @@ export default function TeamNavbar() {
             <header className={`max-w-7xl mx-auto fixed top-0 left-0 right-0 px-4 lg:px-6 h-14 flex items-center justify-between z-50  text-foreground transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <Link href="/teams" className="flex items-center space-x-2">
                     <Logo className='w-6 h-6 fill-black dark:fill-white' />
-                    <span className="font-bold text-xl">Deltalytix</span>
+                    <span className="font-bold text-xl">QuntEdge</span>
                     <Badge variant="secondary" className="text-xs">
                         {t('teams.badge')}
                     </Badge>
@@ -212,7 +212,7 @@ export default function TeamNavbar() {
                                                 <Link className="flex h-full w-full select-none flex-col justify-end rounded-md bg-linear-to-b from-muted/50 to-muted p-6 no-underline outline-hidden focus:shadow-md" href="/team">
                                                     <Logo className='w-6 h-6' />
                                                     <div className="mb-2 mt-4 text-lg font-medium">
-                                                        Deltalytix Enterprise
+                                                        QuntEdge Enterprise
                                                     </div>
                                                     <p className="text-sm leading-tight text-muted-foreground">
                                                         Advanced analytics for trading teams

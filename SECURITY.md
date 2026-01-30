@@ -1,8 +1,8 @@
 # Security
 
-Contact: [security@deltalytix.app](mailto:security@deltalytix.app)
+Contact: [security@quntedge.app](mailto:security@quntedge.app)
 
-At Deltalytix, we consider the security of our systems a top priority. But no matter
+At QuntEdge, we consider the security of our systems a top priority. But no matter
 how much effort we put into system security, there can still be vulnerabilities
 present.
 
@@ -34,17 +34,17 @@ better protect our clients and our systems.
 
 ## Reporting guidelines
 
-- E-mail your findings to [security@deltalytix.app](mailto:security@deltalytix.app)
+- E-mail your findings to [security@quntedge.app](mailto:security@quntedge.app)
 - Do provide sufficient information to reproduce the problem, so we will be
   able to resolve it as quickly as possible.
 
 ## Disclosure guidelines
 
 - Do not reveal the problem to others until it has been resolved
-- If you want to publicly share your research about Deltalytix at a conference, in a blog or any other public forum, you should share a draft with us for review and approval at least 30 days prior to the publication date. Please note that the following should not be included:
-    - Data regarding any Deltalytix customer projects
-    - Deltalytix customers' data
-    - Information about Deltalytix employees, contractors or partners
+- If you want to publicly share your research about QuntEdge at a conference, in a blog or any other public forum, you should share a draft with us for review and approval at least 30 days prior to the publication date. Please note that the following should not be included:
+    - Data regarding any QuntEdge customer projects
+    - QuntEdge customers' data
+    - Information about QuntEdge employees, contractors or partners
 
 ## What we promise
 

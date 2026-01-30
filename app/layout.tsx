@@ -20,31 +20,31 @@ export async function generateMetadata({
   const ref = (params?.ref as string) ?? "";
 
   // Build the dynamic image URL (works locally & in production)
-  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "https://deltalytix.app";
+  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "https://quntedge.app";
   const ogUrl = `${base}/api/og${ref ? `?ref=${encodeURIComponent(ref)}` : ""}`;
 
   return {
-    title: "Deltalytix",
+    title: "QuntEdge",
     description: "Next generation trading dashboard",
-    metadataBase: new URL("https://deltalytix.app"),
+    metadataBase: new URL("https://quntedge.app"),
     alternates: {
-      canonical: "https://deltalytix.app",
+      canonical: "https://quntedge.app",
       languages: {
-        "en-US": "https://deltalytix.app",
-        "fr-FR": "https://deltalytix.app/fr",
+        "en-US": "https://quntedge.app",
+        "fr-FR": "https://quntedge.app/fr",
       },
     },
     // ---------- OPEN GRAPH ----------
     openGraph: {
-      title: "Deltalytix",
+      title: "QuntEdge",
       description:
-        "Deltalytix is a next generation trading dashboard that provides real-time insights and analytics for traders.",
+        "QuntEdge is a next generation trading dashboard that provides real-time insights and analytics for traders.",
       images: [
         {
           url: ref ? ogUrl : "/opengraph-image.png", // dynamic when ref exists
           width: 1200,
           height: 630,
-          alt: "Deltalytix Open Graph Image",
+          alt: "QuntEdge Open Graph Image",
         },
       ],
     },
@@ -52,7 +52,7 @@ export async function generateMetadata({
     // ---------- TWITTER ----------
     twitter: {
       card: "summary_large_image",
-      title: "Deltalytix",
+      title: "QuntEdge",
       description: "Next generation trading dashboard",
       images: [ref ? ogUrl : "/twitter-image.png"],
     },

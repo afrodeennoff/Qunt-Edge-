@@ -2,7 +2,7 @@
  * Utility functions for managing referral codes in localStorage
  */
 
-const REFERRAL_STORAGE_KEY = 'deltalytix_referral_code'
+const REFERRAL_STORAGE_KEY = 'quntedge_referral_code'
 
 /**
  * Get referral code from localStorage

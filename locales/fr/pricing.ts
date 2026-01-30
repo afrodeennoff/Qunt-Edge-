@@ -32,7 +32,7 @@ export default {
         tryBasic: 'Essayer Basic (7 jours gratuit)',
         basic: {
             name: 'Basique',
-            description: 'Parfait pour essayer Deltalytix et débuter avec l\'analyse de trading.',
+            description: 'Parfait pour essayer QuntEdge et débuter avec l\'analyse de trading.',
             feature1: 'Comptes de trading multiples',
             feature2: '2 semaines de stockage incluses',
             feature3: 'Imports CSV basiques uniquement',
@@ -48,7 +48,7 @@ export default {
         },
         premium: {
             name: 'Premium',
-            description: 'Débloquez tout le potentiel de Deltalytix avec notre plan Premium. Idéal pour les traders sérieux qui veulent porter leur trading au niveau supérieur.',
+            description: 'Débloquez tout le potentiel de QuntEdge avec notre plan Premium. Idéal pour les traders sérieux qui veulent porter leur trading au niveau supérieur.',
             feature1: 'Comptes illimités',
             feature2: 'Stockage de données illimité',
             feature3: 'Revue des trades avec l\'IA',
@@ -66,7 +66,7 @@ export default {
         mostPopular: 'Le Plus Populaire',
         free: {
             name: 'Gratuit',
-            description: 'Parfait pour essayer Deltalytix et débuter avec l\'analyse de trading.',
+            description: 'Parfait pour essayer QuntEdge et débuter avec l\'analyse de trading.',
             feature1: '1 compte de trading',
             feature2: '2 semaine de stockage de données',
             feature3: 'Imports CSV',

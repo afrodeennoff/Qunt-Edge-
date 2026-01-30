@@ -21,7 +21,7 @@ export async function sendSupportEmail({ messages, summary, contactInfo }: Suppo
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: `Deltalytix Support <${process.env.SUPPORT_EMAIL ?? ''}>`,
+      from: `QuntEdge Support <${process.env.SUPPORT_EMAIL ?? ''}>`,
       to: [process.env.SUPPORT_TEAM_EMAIL ?? ''],
       cc: [contactInfo.email],
       subject: contactInfo.locale === 'fr' ? 'Nouvelle demande de support' : 'New Support Request',
@@ -51,7 +51,7 @@ export async function sendSubscriptionErrorEmail({ contactInfo }: SubscriptionEr
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: `Deltalytix Support <${process.env.SUPPORT_EMAIL ?? ''}>`,
+      from: `QuntEdge Support <${process.env.SUPPORT_EMAIL ?? ''}>`,
       to: [process.env.SUPPORT_TEAM_EMAIL ?? ''],
       subject: 'Error creating subscription',
       react: createElement(SubscriptionErrorEmail, { contactInfo }),

@@ -15,7 +15,7 @@ const octokit = new Octokit({
 })
 
 const REPO_OWNER = process.env.NEXT_PUBLIC_REPO_OWNER || 'hugodemenez'
-const REPO_NAME = process.env.NEXT_PUBLIC_REPO_NAME || 'deltalytix'
+const REPO_NAME = process.env.NEXT_PUBLIC_REPO_NAME || 'quntedge'
 
 interface GithubData {
   repoData: {

@@ -4,9 +4,9 @@ import { openai } from "@ai-sdk/openai"
 import { streamObject } from "ai"
 import { z } from 'zod/v3';
 
-const DELTALYTIX_CONTEXT = {
-  fr: `Deltalytix est une plateforme web pour day traders de futures, avec une interface intuitive et personnalisable. Conçue à partir de mon expérience personnelle en tant que day trader de futures, utilisant des stratégies de scalping, elle propose des fonctionnalités comme la gestion de multiple compte, le suivi des challenges propfirms, et des tableaux de bord personnalisables. Notre but est de fournir aux traders des analyses approfondies sur leurs habitudes de trading pour optimiser leurs stratégies et améliorer leur prise de décision.`,
-  en: `Deltalytix is a web platform for futures day traders, featuring an intuitive and customizable interface. Designed from my personal experience as a futures day trader using scalping strategies, it offers features like multiple account management, propfirm challenge tracking, and customizable dashboards. Our goal is to provide traders with in-depth analysis of their trading habits to optimize their strategies and improve decision-making.`
+const QUNTEDGE_CONTEXT = {
+  fr: `QuntEdge est une plateforme web pour day traders de futures, avec une interface intuitive et personnalisable. Conçue à partir de mon expérience personnelle en tant que day trader de futures, utilisant des stratégies de scalping, elle propose des fonctionnalités comme la gestion de multiple compte, le suivi des challenges propfirms, et des tableaux de bord personnalisables. Notre but est de fournir aux traders des analyses approfondies sur leurs habitudes de trading pour optimiser leurs stratégies et améliorer leur prise de décision.`,
+  en: `QuntEdge is a web platform for futures day traders, featuring an intuitive and customizable interface. Designed from my personal experience as a futures day trader using scalping strategies, it offers features like multiple account management, propfirm challenge tracking, and customizable dashboards. Our goal is to provide traders with in-depth analysis of their trading habits to optimize their strategies and improve decision-making.`
 }
 
 const analysisSchema = z.object({
@@ -60,7 +60,7 @@ export async function generateTradingAnalysis(
       schema: analysisSchema,
       prompt: language === 'fr'
         ? `Tu es un coach en trading qui aide les traders à progresser. Tu es toujours positif et encourageant.
-${DELTALYTIX_CONTEXT.fr}
+${QUNTEDGE_CONTEXT.fr}
 
 Voici les résultats de trading des deux dernières semaines :
 
@@ -87,7 +87,7 @@ Pour l'analyse (intro) :
 Pour les conseils (tips) :
 1. Donne un conseil simple et facile à suivre
 2. Tu peux faire jusqu'à 36 mots
-3. Parle d'un outil de Deltalytix qui peut aider
+3. Parle d'un outil de QuntEdge qui peut aider
 4. Explique comment ce conseil peut aider à faire mieux
 5. Sois précis sur ce qu'il faut faire
 6. Regarde les bons et les moins bons jours pour donner un conseil utile
@@ -98,7 +98,7 @@ Pour les conseils (tips) :
 
 Fais une analyse qui aide le trader à progresser :`
         : `You are a trading coach who helps traders improve. You are always positive and encouraging.
-${DELTALYTIX_CONTEXT.en}
+${QUNTEDGE_CONTEXT.en}
 
 Here are the trading results for the last two weeks:
 
@@ -125,7 +125,7 @@ For the analysis (intro):
 For the tips:
 1. Give a simple and easy-to-follow tip
 2. You can use up to 36 words
-3. Talk about a Deltalytix tool that can help
+3. Talk about a QuntEdge tool that can help
 4. Explain how this tip can help do better
 5. Be specific about what to do
 6. Look at the good and not-so-good days to give useful advice

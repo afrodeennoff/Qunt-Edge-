@@ -1,7 +1,7 @@
 export default {
     landing: {
         title: 'Votre journal de trading.',
-        description: 'Deltalytix est un journal de trading web pour traders futures permettant de stocker, explorer et comprendre leur historique de trading.',
+        description: 'QuntEdge est un journal de trading web pour traders futures permettant de stocker, explorer et comprendre leur historique de trading.',
         cta: 'Commencer maintenant',
         updates: 'Dernières mises à jour du produit →',
         partners: {
@@ -223,7 +223,7 @@ export default {
         },
         propfirms: {
             title: 'Catalogue des Prop Firms',
-            description: 'Explorez les prop firms suivies par les utilisateurs de Deltalytix. Consultez les statistiques réelles sur les comptes enregistrés et les performances de payouts.',
+            description: 'Explorez les prop firms suivies par les utilisateurs de QuntEdge. Consultez les statistiques réelles sur les comptes enregistrés et les performances de payouts.',
             registeredAccounts: 'Comptes enregistrés',
             accountTemplates: 'Modèles de comptes',
             chart: {

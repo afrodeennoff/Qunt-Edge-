@@ -22,7 +22,7 @@ export default function AuthenticationPage() {
           <div className="relative z-20 flex items-center text-lg font-medium">
             <Link href="/" className="flex items-center gap-2">
               <Logo className="w-10 h-10 fill-white"/>
-              Deltalytix
+              QuntEdge
             </Link>
           </div>
           <div className="relative z-20 mt-auto">

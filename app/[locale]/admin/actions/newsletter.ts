@@ -144,13 +144,13 @@ export async function sendNewsletter({
     for (const batch of batches) {
       try {
         const emailBatch = batch.map(({ email, firstName }) => {
-          const unsubscribeUrl = `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
+          const unsubscribeUrl = `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
           
           return {
-            from: 'Deltalytix <newsletter@eu.updates.deltalytix.app>',
+            from: 'QuntEdge <newsletter@eu.updates.quntedge.app>',
             to: [email],
             subject,
-            reply_to: 'hugo.demenez@deltalytix.app',
+            reply_to: 'hugo.demenez@quntedge.app',
             react: NewsletterEmail({ 
               youtubeId, 
               introMessage, 
@@ -194,10 +194,10 @@ export async function sendTestNewsletter(email: string, firstName: string, param
     }
     const resend = new Resend(process.env.RESEND_API_KEY)
 
-    const unsubscribeUrl = `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
+    const unsubscribeUrl = `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(email)}`
 
     await resend.emails.send({
-      from: 'Deltalytix <newsletter@eu.updates.deltalytix.app>',
+      from: 'QuntEdge <newsletter@eu.updates.quntedge.app>',
       to: email,
       subject: `[TEST] ${params.subject}`,
       react: NewsletterEmail({ 
@@ -208,7 +208,7 @@ export async function sendTestNewsletter(email: string, firstName: string, param
         firstName: params.firstName,
         unsubscribeUrl
       }),
-      replyTo: 'hugo.demenez@deltalytix.app',
+      replyTo: 'hugo.demenez@quntedge.app',
       headers: {
         'List-Unsubscribe': `<${unsubscribeUrl}>`,
         'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'
@@ -237,7 +237,7 @@ export async function renderEmailPreview(params: {
         features: params.features,
         email: "preview@example.com",
         firstName: params.firstName,
-        unsubscribeUrl: `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent("preview@example.com")}`
+        unsubscribeUrl: `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent("preview@example.com")}`
       })
     )
 

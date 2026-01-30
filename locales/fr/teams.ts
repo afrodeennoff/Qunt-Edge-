@@ -137,7 +137,7 @@ const teams = {
   
   // CTA section
   'teams.cta.createAccount.title': 'Prêt à Commencer ?',
-  'teams.cta.createAccount.description': 'Voyez pourquoi 500+ traders font confiance à Deltalytix. Planifiez un échange aujourd\'hui.',
+  'teams.cta.createAccount.description': 'Voyez pourquoi 500+ traders font confiance à QuntEdge. Planifiez un échange aujourd\'hui.',
   'teams.cta.createAccount.button': 'Commencer',
   'teams.cta.createAccount.subtext': 'Onboarding sur mesure • Installation en 5 minutes • Pas de contrat long terme',
   

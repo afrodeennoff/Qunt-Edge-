@@ -32,7 +32,7 @@ export default {
         tryBasic: 'Try Basic (7 days free)',
         basic: {
             name: 'Basic',
-            description: 'Perfect for trying out Deltalytix and getting started with trading analytics.',
+            description: 'Perfect for trying out QuntEdge and getting started with trading analytics.',
             feature1: 'Multiple trading accounts',
             feature2: '2 weeks of data storage included',
             feature3: 'Basic CSV imports only',
@@ -48,7 +48,7 @@ export default {
         },
         premium: {
             name: 'Premium',
-            description: 'Unlock the full potential of Deltalytix with our Premium plan. Ideal for serious traders who want to take their trading to the next level.',
+            description: 'Unlock the full potential of QuntEdge with our Premium plan. Ideal for serious traders who want to take their trading to the next level.',
             feature1: 'Unlimited Accounts',
             feature2: 'Unlimited Data Storage',
             feature3: 'Trade Review with AI',
@@ -66,7 +66,7 @@ export default {
         mostPopular: 'Most Popular',
         free: {
             name: 'Free',
-            description: 'Perfect for trying out Deltalytix and getting started with trading analytics.',
+            description: 'Perfect for trying out QuntEdge and getting started with trading analytics.',
             feature1: '1 trading account',
             feature2: '2 weeks of data storage',
             feature3: 'CSV imports',

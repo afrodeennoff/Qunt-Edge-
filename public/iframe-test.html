@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Chart Test - Deltalytix</title>
+    <title>Interactive Chart Test - QuntEdge</title>
     <style>
         :root {
             --background: 0 0% 100%;
@@ -1010,7 +1010,7 @@
         <div class="main-content">
         <div class="header">
             <h1>Interactive Chart Test</h1>
-            <p>Test and interact with the Deltalytix trading performance chart in real-time</p>
+            <p>Test and interact with the QuntEdge trading performance chart in real-time</p>
         </div>
 
         <div class="info">
@@ -1038,8 +1038,8 @@
                 <label>Environment:</label>
                 <select id="environmentSelect" onchange="updateConfiguration(); updateSidebarIframe();">
                     <option value="localhost">Localhost (http://localhost:3000)</option>
-                    <option value="beta" selected>Beta (https://beta.deltalytix.app)</option>
-                    <option value="stable">Stable (https://deltalytix.app)</option>
+                    <option value="beta" selected>Beta (https://beta.quntedge.app)</option>
+                    <option value="stable">Stable (https://quntedge.app)</option>
                 </select>
             </div>
 
@@ -1168,7 +1168,7 @@
         </div>
 
         <div class="iframe-container" id="iframeContainer" data-theme="dark">
-            <iframe id="chartIframe" src="https://beta.deltalytix.app/embed?theme=dark"></iframe>
+            <iframe id="chartIframe" src="https://beta.quntedge.app/embed?theme=dark"></iframe>
         </div>
     </div>
 
@@ -1297,8 +1297,8 @@
         // Environment configuration
         const environments = {
             localhost: 'http://localhost:3000',
-            beta: 'https://beta.deltalytix.app',
-            stable: 'https://deltalytix.app'
+            beta: 'https://beta.quntedge.app',
+            stable: 'https://quntedge.app'
         };
 
         // Chart definitions with descriptions
@@ -1326,7 +1326,7 @@
 
         // Load configuration from localStorage
         function loadConfiguration() {
-            const saved = localStorage.getItem('deltalytix-embed-config');
+            const saved = localStorage.getItem('quntedge-embed-config');
             if (saved) {
                 try {
                     currentConfig = { ...currentConfig, ...JSON.parse(saved) };
@@ -1344,7 +1344,7 @@
 
         // Save configuration to localStorage
         function saveConfiguration() {
-            localStorage.setItem('deltalytix-embed-config', JSON.stringify(currentConfig));
+            localStorage.setItem('quntedge-embed-config', JSON.stringify(currentConfig));
         }
 
         // Update configuration and reload iframe

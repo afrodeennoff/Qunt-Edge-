@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
       
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
-        <p>Deltalytix (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.</p>
+        <p>QuntEdge (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service.</p>
       </section>
 
       <section className="mb-6">
@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-3">9. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:privacy@deltalytix.com" className="text-primary hover:underline">privacy@deltalytix.com</a></p>
+        <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:privacy@quntedge.com" className="text-primary hover:underline">privacy@quntedge.com</a></p>
       </section>
 
       <p className="mt-8 text-sm">Last updated: {new Date().toISOString().split('T')[0]}</p>

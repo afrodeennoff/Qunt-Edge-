@@ -630,7 +630,7 @@ export default function SettingsPage() {
                 variant="destructive" 
                 className="w-full justify-start"
                 onClick={() => {
-                  localStorage.removeItem('deltalytix_user_data')
+                  localStorage.removeItem('quntedge_user_data')
                   signOut()
                 }}
               >

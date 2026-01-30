@@ -173,7 +173,7 @@ export async function GET(req: Request) {
             const unsubscribeUrl = `${process.env.NEXT_PUBLIC_APP_URL}/settings/notifications`
 
             const { data, error } = await resend.emails.send({
-              from: 'Deltalytix Renewals <renewals@eu.updates.deltalytix.app>',
+              from: 'QuntEdge Renewals <renewals@eu.updates.quntedge.app>',
               to: userEmail,
               subject: userLanguage === 'fr'
                 ? `Renouvellement prochain - ${accountName}`
@@ -189,7 +189,7 @@ export async function GET(req: Request) {
                 language: userLanguage,
                 unsubscribeUrl: unsubscribeUrl
               }),
-              replyTo: 'hugo.demenez@deltalytix.app',
+              replyTo: 'hugo.demenez@quntedge.app',
               headers: {
                 'List-Unsubscribe': `<${unsubscribeUrl}>`,
                 'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'

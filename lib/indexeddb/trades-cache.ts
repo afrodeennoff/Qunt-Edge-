@@ -1,6 +1,6 @@
 import { Trade as PrismaTrade } from "@/prisma/generated/prisma/browser"
 
-const DB_NAME = "deltalytix-cache"
+const DB_NAME = "quntedge-cache"
 const DB_VERSION = 1
 const STORE_NAME = "trades"
 const KEY_PREFIX = "trades:"

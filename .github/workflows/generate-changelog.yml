@@ -52,7 +52,7 @@ jobs:
           agent -p --force \
             "Analyze the changes in this pull request from beta to main. 
             
-            Create changelog entries following the Deltalytix format:
+            Create changelog entries following the QuntEdge format:
             
             **File Structure:**
             - Create files in both \`content/updates/en\` and \`content/updates/fr\`

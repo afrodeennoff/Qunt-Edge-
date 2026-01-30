@@ -4,7 +4,7 @@ import { YoutubeTranscript } from 'youtube-transcript'
 import { generateText, Output } from "ai"
 import { z } from 'zod/v3';
 
-const DELTALYTIX_CONTEXT = `Deltalytix est une plateforme web pour day traders de futures, avec une interface intuitive et personnalisable. Conçue à partir de mon expérience personnelle en tant que day trader de futures, utilisant des stratégies de scalping, elle propose des fonctionnalités comme la gestion de multiple compte, le suivi des challenges propfirms, et des tableaux de bord personnalisables. Notre but est de fournir aux traders des analyses approfondies sur leurs habitudes de trading pour optimiser leurs stratégies et améliorer leur prise de décision.`
+const QUNTEDGE_CONTEXT = `QuntEdge est une plateforme web pour day traders de futures, avec une interface intuitive et personnalisable. Conçue à partir de mon expérience personnelle en tant que day trader de futures, utilisant des stratégies de scalping, elle propose des fonctionnalités comme la gestion de multiple compte, le suivi des challenges propfirms, et des tableaux de bord personnalisables. Notre but est de fournir aux traders des analyses approfondies sur leurs habitudes de trading pour optimiser leurs stratégies et améliorer leur prise de décision.`
 
 const summarySchema = z.object({
   summary: z.string().describe("Un résumé technique concis des mises à jour présentées")
@@ -15,8 +15,8 @@ export async function generateTranscriptSummary(transcript: string): Promise<str
     const { output } = await generateText({
       model: 'openai/gpt-5-mini',
       output: Output.object({ schema: summarySchema }),
-      prompt: `Tu es un expert en développement web et en trading qui aide à résumer les mises à jour de Deltalytix.
-${DELTALYTIX_CONTEXT}
+      prompt: `Tu es un expert en développement web et en trading qui aide à résumer les mises à jour de QuntEdge.
+${QUNTEDGE_CONTEXT}
 
 Ta tâche est de :
 1. Analyser la transcription d'une vidéo YouTube
@@ -151,7 +151,7 @@ function isSameWeek(date1: Date, date2: Date): boolean {
 }
 
 /**
- * Fetch all videos from the Deltalytix YouTube playlist
+ * Fetch all videos from the QuntEdge YouTube playlist
  * Returns a map of video IDs indexed by publish date
  */
 export async function getAllVideosFromPlaylistAction(): Promise<Map<string, PlaylistVideo> | null> {

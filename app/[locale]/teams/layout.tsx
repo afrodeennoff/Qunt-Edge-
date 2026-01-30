@@ -14,7 +14,7 @@ export async function generateMetadata(props: { params: Promise<{ locale: Locale
   const description = descriptions[params.locale] || descriptions.en;
 
   return {
-    title: 'Deltalytix Teams',
+    title: 'QuntEdge Teams',
     description,
   };
 }

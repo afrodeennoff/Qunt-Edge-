@@ -42,7 +42,7 @@ export async function POST(req: Request) {
       }
     })
 
-    const unsubscribeUrl = `https://deltalytix.app/api/email/unsubscribe?email=${encodeURIComponent(record.email)}`
+    const unsubscribeUrl = `https://quntedge.app/api/email/unsubscribe?email=${encodeURIComponent(record.email)}`
 
     // Check user language preference from database
     const user = await prisma.user.findUnique({
@@ -56,11 +56,11 @@ export async function POST(req: Request) {
 
     // Use react prop instead of rendering to HTML
     const { data, error } = await resend.emails.send({
-      from: 'Deltalytix <welcome@eu.updates.deltalytix.app>',
+      from: 'QuntEdge <welcome@eu.updates.quntedge.app>',
       to: record.email,
-      subject: userLanguage === 'fr' ? 'Bienvenue sur Deltalytix' : 'Welcome to Deltalytix',
+      subject: userLanguage === 'fr' ? 'Bienvenue sur QuntEdge' : 'Welcome to QuntEdge',
       react: WelcomeEmail({ firstName, email: record.email, language: userLanguage, youtubeId: youtubeId || 'ZBrIZpCh_7Q' }),
-      replyTo: 'hugo.demenez@deltalytix.app',
+      replyTo: 'hugo.demenez@quntedge.app',
       headers: {
         'List-Unsubscribe': `<${unsubscribeUrl}>`,
         'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click'
