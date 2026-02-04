@@ -1,0 +1,130 @@
+export default {
+  mindset: {
+    title: 'Journal de Trading',
+    description: 'Suivez votre état d\'esprit et vos émotions en trading',
+    back: 'Retour',
+    next: 'Suivant',
+    saveSuccess: 'Succès',
+    saveSuccessDescription: 'Votre entrée d\'état d\'esprit a été enregistrée avec succès.',
+    saveError: 'Erreur',
+    saveErrorDescription: 'Échec de l\'enregistrement de votre entrée d\'état d\'esprit. Veuillez réessayer.',
+    loadError: 'Erreur',
+    loadErrorDescription: 'Échec du chargement des données d\'état d\'esprit. Veuillez réessayer.',
+    noEntries: 'Aucune entrée trouvée pour les 30 derniers jours',
+    addEntry: 'Ajouter une entrée',
+    selectDate: 'Sélectionner une date',
+    edit: 'Modifier',
+    noData: 'Aucune donnée disponible',
+    today: 'Aujourd\'hui',
+    delete: 'Supprimer',
+    cancel: 'Annuler',
+    deleteSuccess: 'Succès',
+    deleteSuccessDescription: 'L\'entrée a été supprimée avec succès.',
+    deleteError: 'Erreur',
+    deleteErrorDescription: 'Échec de la suppression de l\'entrée. Veuillez réessayer.',
+    deleteConfirmTitle: 'Supprimer l\'entrée',
+    deleteConfirmDescription: 'Êtes-vous sûr de vouloir supprimer cette entrée ? Cette action ne peut pas être annulée.',
+    tradingQuestion: {
+      title: 'Activité de Trading',
+      question: 'Avez-vous tradé le {date} ?',
+      questionToday: 'Tradez-vous aujourd\'hui ?',
+      yes: 'Oui',
+      no: 'Non'
+    },
+    emotion: {
+      title: 'État Émotionnel',
+      description: 'Comment vous sentez-vous par rapport à votre trading aujourd\'hui ?',
+      verySad: 'Très Négatif',
+      sad: 'Négatif',
+      neutral: 'Neutre',
+      happy: 'Positif',
+      veryHappy: 'Très Positif'
+    },
+    newsImpact: {
+      title: 'Impact des news',
+      description: 'Sélectionnez les événements d\'actualité qui ont impacté votre trading',
+      selectImportantNews: 'Sélectionner les news importantes',
+      event: 'événement',
+      events: 'événements',
+      noEvents: 'Aucun événement pour ce jour',
+      highImpact: 'News à fort impact',
+      selectCountry: 'Sélectionner le pays',
+      allCountries: 'Tous les pays',
+      filterByCountry: 'Filtrer par pays',
+      searchCountry: 'Rechercher un pays...',
+      noCountries: 'Aucun pays trouvé',
+      sortByImpact: 'Trier par Impact',
+      filterBySession: 'Filtrer par Session',
+      allSessions: 'Toutes les Sessions',
+      session: {
+        LONDON: 'Session de Londres',
+        US: 'Session US',
+        ASIA: 'Session Asie'
+      },
+      filters: 'Filtres',
+      searchFilters: 'Rechercher des filtres...',
+      sortBy: 'Trier par',
+      moreEvents: '{count} événements supplémentaires',
+      showOnlyTraded: 'Afficher uniquement les heures tradées',
+      showOnlySelectedNews: 'Afficher uniquement les news sélectionnées à l\'étape de sélection des news',
+      tradedHour: 'Heure tradée',
+      clickToSeeMore: 'Cliquer pour voir plus',
+      importanceFilter: {
+        title: 'Filtrer par Importance',
+        low: 'Impact Faible',
+        medium: 'Impact Moyen',
+        high: 'Impact Élevé'
+      }
+    },
+    journaling: {
+      title: 'Journal de Trading',
+      placeholder: 'Écrivez vos pensées et réflexions sur votre trading ici...',
+      save: 'Enregistrer',
+      editorPlaceholder: 'Commencez à écrire...'
+    },
+    tags: {
+      title: 'Tags de Session',
+      description: 'Cliquez sur un tag pour l\'appliquer à tous les trades de cette journée',
+      add: 'Ajouter un tag',
+      addNew: 'Ajouter',
+      search: 'Rechercher des tags...',
+      create: 'Créer "{tag}"',
+      createAndApply: 'Créer et appliquer "{tag}" à tous les trades',
+      existing: 'Tags existants',
+      noTags: 'Aucun tag trouvé',
+      noTrades: 'Aucun trade pour cette journée',
+      noTagsOnTrades: 'Aucun tag sur les trades',
+      trade: 'trade',
+      trades: 'trades',
+      clickToApplyToAll: 'Cliquez pour appliquer ce tag à tous les trades',
+      allTradesTagged: 'Tous les trades ont ce tag',
+      tagApplied: 'Tag appliqué',
+      tagAppliedDescription: 'Le tag "{tag}" a été appliqué à tous les trades de cette journée',
+      tagApplyError: 'Échec de l\'application du tag',
+      tagApplyErrorDescription: 'Impossible d\'appliquer le tag. Veuillez réessayer.'
+    },
+    editor: {
+      news: {
+        title: 'Actualités',
+        selectNews: 'Sélectionner les actualités',
+        selectedCount: '{count} sélectionnées',
+        noNews: 'Aucune actualité disponible',
+        clearSelection: 'Effacer la sélection'
+      }
+    },
+    tradingStats: {
+      title: 'Statistiques de trading',
+      winningTrades: 'Trades gagnants',
+      losingTrades: 'Trades perdants',
+      totalPnL: 'P&L total',
+      winRate: 'Taux de réussite',
+      symbol: 'Symbole',
+      pnl: 'P&L',
+      commission: 'Commission',
+      netPnL: 'P&L Net',
+      entryTime: 'Heure d\'entrée'
+    },
+    hideTimeline: 'Masquer la chronologie',
+    showTimeline: 'Afficher la chronologie'
+  }
+} as const; 

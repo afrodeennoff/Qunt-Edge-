@@ -1,0 +1,130 @@
+export default {
+  mindset: {
+    title: 'Trading Journal',
+    description: 'Track your trading mindset and emotions',
+    back: 'Back',
+    next: 'Next',
+    saveSuccess: 'Success',
+    saveSuccessDescription: 'Your mindset entry has been saved successfully.',
+    saveError: 'Error',
+    saveErrorDescription: 'Failed to save your mindset entry. Please try again.',
+    loadError: 'Error',
+    loadErrorDescription: 'Failed to load mindset data. Please try again.',
+    noEntries: 'No entries found for the last 30 days',
+    addEntry: 'Add Entry',
+    selectDate: 'Select Date',
+    edit: 'Edit',
+    noData: 'No data available',
+    today: 'Today',
+    delete: 'Delete',
+    cancel: 'Cancel',
+    deleteSuccess: 'Success',
+    deleteSuccessDescription: 'The entry has been deleted successfully.',
+    deleteError: 'Error',
+    deleteErrorDescription: 'Failed to delete the entry. Please try again.',
+    deleteConfirmTitle: 'Delete Entry',
+    deleteConfirmDescription: 'Are you sure you want to delete this entry? This action cannot be undone.',
+    tradingQuestion: {
+      title: 'Trading Activity',
+      question: 'Did you trade on {date}?',
+      questionToday: 'Do you trade today?',
+      yes: 'Yes',
+      no: 'No'
+    },
+    emotion: {
+      title: 'Emotional State',
+      description: 'How are you feeling about your trading today?',
+      verySad: 'Very Negative',
+      sad: 'Negative',
+      neutral: 'Neutral',
+      happy: 'Positive',
+      veryHappy: 'Very Positive'
+    },
+    newsImpact: {
+      title: 'News Impact',
+      description: 'Select the news events that impacted your trading',
+      selectImportantNews: 'Select important news',
+      event: 'event',
+      events: 'events',
+      noEvents: 'No events for this day',
+      highImpact: 'High impact news',
+      selectCountry: 'Select Country',
+      allCountries: 'All Countries',
+      filterByCountry: 'Filter by Country',
+      searchCountry: 'Search country...',
+      noCountries: 'No countries found',
+      sortByImpact: 'Sort by Impact',
+      filterBySession: 'Filter by Session',
+      allSessions: 'All Sessions',
+      session: {
+        LONDON: 'London Session',
+        US: 'US Session',
+        ASIA: 'Asia Session'
+      },
+      filters: 'Filters',
+      searchFilters: 'Search filters...',
+      sortBy: 'Sort by',
+      moreEvents: '{count} more events',
+      showOnlyTraded: 'Show only traded hours',
+      showOnlySelectedNews: 'Show selected news from the news selection step only',
+      tradedHour: 'Traded hour',
+      clickToSeeMore: 'Click to see more',
+      importanceFilter: {
+        title: 'Filter by Importance',
+        low: 'Low Impact',
+        medium: 'Medium Impact',
+        high: 'High Impact'
+      }
+    },
+    journaling: {
+      title: 'Trading Journal',
+      placeholder: 'Write your trading thoughts and reflections here...',
+      save: 'Save Entry',
+      editorPlaceholder: 'Start writing...'
+    },
+    tags: {
+      title: 'Session Tags',
+      description: 'Click on a tag to apply it to all trades for this day',
+      add: 'Add Tag',
+      addNew: 'Add New',
+      search: 'Search tags...',
+      create: 'Create "{tag}"',
+      createAndApply: 'Create and apply "{tag}" to all trades',
+      existing: 'Existing Tags',
+      noTags: 'No tags found',
+      noTrades: 'No trades for this day',
+      noTagsOnTrades: 'No tags on trades yet',
+      trade: 'trade',
+      trades: 'trades',
+      clickToApplyToAll: 'Click to apply this tag to all trades',
+      allTradesTagged: 'All trades have this tag',
+      tagApplied: 'Tag applied',
+      tagAppliedDescription: 'Tag "{tag}" has been applied to all trades for this day',
+      tagApplyError: 'Failed to apply tag',
+      tagApplyErrorDescription: 'Could not apply the tag. Please try again.'
+    },
+    editor: {
+      news: {
+        title: 'News',
+        selectNews: 'Select News',
+        selectedCount: '{count} selected',
+        noNews: 'No news available',
+        clearSelection: 'Clear selection'
+      }
+    },
+    tradingStats: {
+      title: 'Trading Statistics',
+      winningTrades: 'Winning Trades',
+      losingTrades: 'Losing Trades',
+      totalPnL: 'Total P&L',
+      winRate: 'Win Rate',
+      symbol: 'Symbol',
+      pnl: 'P&L',
+      commission: 'Commission',
+      netPnL: 'Net P&L',
+      entryTime: 'Entry Time'
+    },
+    hideTimeline: 'Hide Timeline',
+    showTimeline: 'Show Timeline'
+  }
+} as const 
